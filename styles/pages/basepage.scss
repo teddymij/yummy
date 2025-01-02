@@ -1,0 +1,37 @@
+// Déclaration de la variable
+$heightwidth: 100%;
+
+// Media query pour les écrans plus petits
+@media (max-width: 1000px) {
+  $heightwidth: 60%;
+}
+@media (max-width: 1500px) {
+  $heightwidth: 60%;
+}
+body {
+  scroll-behavior: smooth;
+}
+// Styles pour l'image
+.card img {
+  padding-bottom: 30px;
+  padding-right: 20px;
+}
+
+// Classe personnalisée pour l'image
+.custom-img {
+  max-width: $heightwidth; /* pour qu'elle ne dépasse pas la largeur de son parent */
+  height: auto; /* Assurer que la hauteur s'ajuste proportionnellement */
+  object-fit: cover; /* pour que l'image garde son ratio tout en remplissant l'espace */
+}
+
+// Contact page
+.custom-img-contact {
+  max-width: 100%; /* pour qu'elle ne dépasse pas la largeur de son parent */
+  height: auto; /* Assurer que la hauteur s'ajuste proportionnellement */
+  object-fit: cover; /* pour que l'image garde son ratio tout en remplissant l'espace */
+}
+.todisappear {
+  @media (max-width: 780px) {
+    display: none; /* cache l'image */
+  }
+}

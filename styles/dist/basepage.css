@@ -1,0 +1,27 @@
+@charset "UTF-8";
+body {
+  scroll-behavior: smooth;
+}
+
+.card img {
+  padding-bottom: 30px;
+  padding-right: 20px;
+}
+
+.custom-img {
+  max-width: 100%; /* pour qu'elle ne dépasse pas la largeur de son parent */
+  height: auto; /* Assurer que la hauteur s'ajuste proportionnellement */
+  object-fit: cover; /* pour que l'image garde son ratio tout en remplissant l'espace */
+}
+
+.custom-img-contact {
+  max-width: 100%; /* pour qu'elle ne dépasse pas la largeur de son parent */
+  height: auto; /* Assurer que la hauteur s'ajuste proportionnellement */
+  object-fit: cover; /* pour que l'image garde son ratio tout en remplissant l'espace */
+}
+
+@media (max-width: 780px) {
+  .todisappear {
+    display: none; /* cache l'image */
+  }
+}/*# sourceMappingURL=basepage.css.map */
